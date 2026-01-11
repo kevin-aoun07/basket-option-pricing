@@ -12,12 +12,12 @@ The project includes:
 
 ## Repository Content
 
-### ✅ Code
+### Code
 
 - **`original_code.py`**  
   The original academic script used for the project report.  
   It runs *all questions/experiments sequentially* and displays figures as it goes.  
-  ⚠️ Some sections can take a long time to run.
+  Some sections can take a long time to run.
 
 - **`basket_option_pricing.py`**  
   A **GitHub-friendly version** of the code (same logic, reorganized for usability):  
@@ -30,7 +30,7 @@ The project includes:
 
 ---
 
-### 📄 Report
+### Report
 
 - **`rapport.pdf`**  
   Full mathematical derivations, methodology, and numerical results.
@@ -44,7 +44,7 @@ python original_code.py
 
 
 This will execute all experiments sequentially and display the figures as they are generated.  
-⚠️ Some parts may take a long time to run.
+Some parts may take a long time to run.
 
 ---
 
