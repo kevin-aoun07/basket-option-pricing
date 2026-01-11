@@ -1,29 +1,42 @@
-# Basket Option Pricing Project
+# Basket Option Pricing (Monte Carlo + Variance Reduction)
 
-This project studies the pricing of European basket options in a two-asset Black-Scholes framework.
+This repository contains a quantitative finance project on **pricing a European basket call option** in a **two-asset Black–Scholes** framework.
 
-## Methods implemented
-- Log-normal approximation of the basket distribution  
-- Monte Carlo simulation with correlated Brownian motions  
-- Variance reduction using conditioning  
-- Variance reduction using control variates  
+The project includes:
+- A **log-normal approximation** of the basket distribution
+- **Monte Carlo simulation** with correlated Brownian motions
+- **Variance reduction** techniques (conditioning + control variates)
+- Sensitivity analyses and confidence intervals
 
-## Features
-- Box-Muller Gaussian simulation  
-- Cholesky decomposition for correlation  
-- Confidence intervals for Monte Carlo estimators  
-- Sensitivity analysis with respect to:
-  - Correlation ρ  
-  - Basket weight α  
-  - Strike K  
+---
 
-## Files
-- `basket_option_pricing.py`: Python implementation  
-- `rapport.pdf`: Full mathematical report  
+## Repository content
 
-## Technologies
-- Python  
-- NumPy  
-- SciPy  
-- Matplotlib  
+### ✅ Code
+- **`original_code.py`**  
+  The original academic script used for the project report.  
+  It runs *all questions/experiments sequentially* and displays figures as it goes.  
+  ⚠️ Some sections can take a long time to run.
 
+- **`basket_option_pricing.py`**  
+  A **GitHub-friendly version** of the code (same logic, reorganized for usability):  
+  - `FAST` mode (default): reduced Monte Carlo sample sizes and smaller grids  
+  - `FULL` mode: reproduces the full experiments  
+  - Run **one section only** using `--section`  
+  - Option to **save figures** to `./figures` using `--savefig`  
+
+> This is the recommended script to run for a quick overview.
+
+### 📄 Report
+- **`rapport.pdf`**  
+  Full mathematical derivations, methodology, and numerical results.
+
+(Optional) If you also uploaded slides, you can list them here:
+- `presentation.pdf` (optional)
+
+---
+
+## Installation
+
+```bash
+pip install numpy scipy matplotlib
