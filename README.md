@@ -34,10 +34,6 @@ The project includes:
 
 - **`rapport.pdf`**  
   Full mathematical derivations, methodology, and numerical results.
-
-(Optional)
-- `presentation.pdf` – Slides summarizing the project (if available)
-
 ---
 
 ## How to Run
@@ -57,9 +53,9 @@ This will execute all experiments sequentially and display the figures as they a
 #### Fast demo (default)
 
 Runs quickly with reduced Monte Carlo sample sizes and smaller parameter grids:
-
+```
 python basket_option_pricing.py
-
+```
 
 #### Full run (slow)
 
