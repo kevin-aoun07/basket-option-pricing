@@ -60,9 +60,9 @@ python basket_option_pricing.py
 #### Full run (slow)
 
 Reproduces the full experiments:
-
+```
 python basket_option_pricing.py --full
-
+```
 
 #### Run a specific section only
 
@@ -72,20 +72,20 @@ basics, mc, q6, q7, q8, q9, q10, q11, q12
 
 
 Example (run only the correlation ρ study):
-
+```
 python basket_option_pricing.py --section q7
-
+```
 #### Save figures instead of displaying them
 
 Figures will be saved into a `figures/` folder:
-
+```
 python basket_option_pricing.py --savefig
-
+```
 
 You can combine options, for example:
-
+```
 python basket_option_pricing.py --full --savefig
-
+```
 
 ---
 
